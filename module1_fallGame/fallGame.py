@@ -119,3 +119,10 @@ while running:
     pygame.display.update()  # Refresh screen
 
 pygame.quit()
+
+image = pygame.image.load('Pygame-Background.jpg')
+def Background_sky(image):
+    size = pygame.transform.scale(image,(700,500))
+    screen.blit(size, (0, 0))
+
+Background_sky(image)    
